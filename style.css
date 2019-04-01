@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.middle {
+	display: inline-block;
+	text-align: center;
+}
+
+body {
+	margin: 0px;
+}
+
+.main {
+	width: 100vw;
+	height: 80vh;
+	margin: 0;
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+ 	background-size: 30vw;
+	background-color: #dddddd;
+}
