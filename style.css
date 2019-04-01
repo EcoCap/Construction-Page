@@ -3,6 +3,8 @@
 
 .middle {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 body {
@@ -21,29 +23,18 @@ body {
 
 .logo{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10vh;
-	width: 15vw;
-	height: 15vw;
-}
-
-.header1{
-	font-size:3vh;
-}
-
-.header2{
-	font-size:1.5vh;
+	margin: auto;
+	width: 5vw;
 }
 
 .timer{
-	padding-top: 5vh;
+	padding-top: 2vh;
 	text-align: center;
 	font-family: Lucida Console;
 }
 
 #countDown{
-	font-size: 5vh;
+	font-size: 2vw;
 }
 
 .label{
@@ -51,5 +42,8 @@ body {
 	float: left;
 	font-size: 2vh;
 	width: 13vh;
-	left: 40vh;
+}
+
+.content {
+	padding: 25vh 5vw;
 }
