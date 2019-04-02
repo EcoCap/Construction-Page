@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face {
+  font-family: coolvetica;
+  src: url(coolvetica.ttf);
+}
+
 .middle {
 	text-align: center;
 	margin-left: auto;
@@ -17,20 +22,25 @@ body {
 	margin: 0;
 	background-image: url(background.jpg);
 	background-repeat: no-repeat;
- 	background-size: 30vw;
+ 	background-size: 700px;
 	background-color: #dddddd;
+	font-family: coolvetica;
+	letter-spacing: 0.1em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .logo{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	width: 7vw;
 }
 
 #countDown{
-	font-size: 5vh;
-	padding-top: 5vh;
+	font-size: 3vh;
 	text-align: center;
 	font-family: Lucida Console;
 }
@@ -49,11 +59,56 @@ body {
 	width: 50vw;
 	height: 1vh;
 	border: black solid 1px;
-	border-radius: 5px;
+	border-radius: 1vw;
 }
 
 .progress-bar {
 	height: 1vh;
 	width: 0vw;
 	background-color: #6B6B6B;
+}
+
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 50vw;
+    height: 1.5vh;
+	-webkit-border-radius: 1vw;
+	 -khtml-border-radius: 1vw;
+	   -moz-border-radius: 1vw;
+	    -ms-border-radius: 1vw;
+            border-radius: 1vw; 
+	
+	color: #168D58; 
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .15), 
+	                           rgba(0, 0, 0, .15)),
+	   -webkit-linear-gradient(left, #3f9, #1a1);
+	
+	-webkit-border-radius: 2vw;
+	 -khtml-border-radius: 2vw;
+	   -moz-border-radius: 2vw;
+	    -ms-border-radius: 2vw;
+	        border-radius: 2vw; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+	transition: .3s all ease-in-out;
+}
+
+progress[value]::-webkit-progress-value::before {
+  content: '80%';
+  position: absolute;
+  right: 0;
+  top: -125%;
 }
