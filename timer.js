@@ -1,6 +1,5 @@
-var countDownDate = new Date("Apr 3, 2019 00:00:00").getTime();
+var countDownDate = new Date("Sep 1, 2019 00:00:00").getTime();
 var startDate = new Date("Apr 1, 2019 00:00:00");
-var progressWidth = 0;
 
 
 var x = setInterval(function() {
@@ -12,7 +11,7 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  progressWidth = (1 - distance / totDistance) * 50 + "vw";
+  var progressWidth = (1 - distance / totDistance) * 50 + "vw";
 	
 
   // Display the result in the element with id="demo"
