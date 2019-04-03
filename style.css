@@ -2,8 +2,8 @@
 /* CSS Document */
 
 @font-face {
-  font-family: coolvetica;
-  src: url(coolvetica.ttf);
+  font-family: Vogue;
+  src: url(Vogue.ttf);
 }
 
 .middle {
@@ -24,7 +24,7 @@ body {
 	background-repeat: no-repeat;
  	background-size: 700px;
 	background-color: #dddddd;
-	font-family: coolvetica;
+	font-family: Vogue;
 	letter-spacing: 0.1em;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -88,6 +88,7 @@ progress[value]::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 2vw;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  align-self: center;
 }
 
 progress[value]::-webkit-progress-value {
