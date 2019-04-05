@@ -4,30 +4,28 @@
 		<meta charset="utf-8">
 		<title>Eco Cap</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="shortcut icon" href="favicon.ico">
 		<script type="text/javascript" src="timer.js"></script>
 	</head>
 	<body>
-		<div class="main center">
+		<div class="main">
 			<div class="content">
-				<img src="logo.png" class="logo middle" alt="Eco Cap Logo" width="175vw">
-				<h1 class="header1 middle">UNDER CONSTRUCTION</h1>
-				<h2 class="middle">Come back soon for updates and more info!</h2>
-				<p id="countDown" class="timer"></p>
-				<!--<div style="height: 1vh;">
-					<div class="progress-container">
-						<div class="progress-bar" id="progress-bar"></div>
+				<div class = "center">
+					<img src="logo.png" class="logo middle" alt="Eco Cap Logo" width="175vw">
+					<h1 class="middle" style="font-size: 50px"><b>UNDER CONSTRUCTION</b></h1>
+					<h3 class="middle" style="margin: 0;"><b>Come back soon for updates and more info!</b></h3>
+					<p id="countDown" style="margin: 20px 0;">days remaining</p>
+<!--
+					<ul class="bar">
+						<li class="middle"><progress value="0" id="progress" /></li>
+						<li><p id="percent">2</p></li>
+					</ul>
+-->
+					<div class="progress middle" style="width: 50vw; border-radius: 10px !important; margin-bottom: 20px;">
+						<div id="progress-bar" class="progress-bar progress-bar-striped active" role="progressbar" style="width: 0vw;">10%</div>
 					</div>
 				</div>
-				 <table class="labelTable" align="center">
-					<tr>
-						<th id="timeLabel1" class="label">Days</th>
-						<th id="timeLabel2" class="label">Hours</th>
-						<th id="timeLabel3" class="label">Minutes</th>
-						<th id="timeLabel4" class="label">Seconds</th>
-					</tr>
-				</table> -->
-				<progress value="0" id="progress"/>
 			</div>
 		</div>
 	</body>
